@@ -6,16 +6,16 @@
 #include <WiFi.h>
 #include "CloudOTA.h"
 
-// #ifndef LED_BUILTIN
-// #define LED_BUILTIN 12
-// #endif
+#ifndef LED_BUILTIN
+#define LED_BUILTIN 12
+#endif
 
 const char *ssid = "SHAOMI";
 const char *password = "123sony321";
 
 void setup() {
 
-//  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
   
   Serial.begin(115200);
 
@@ -32,6 +32,6 @@ void setup() {
 }
 
 void loop() {
-//  digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
-//  delay(1000);
+ digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+ delay(1000);
 }

@@ -5,7 +5,7 @@
 #include <Update.h>
 
 // ------ Change the following paramters according to your server //
-String currentFwVersion{"2.0.2"};
+String currentFwVersion{"2.0.5"};
 String host = "raw.githubusercontent.com";
 const int hostPort = 443;
 String fwVersionURL = "/OpAmpLogic/CloudOTA/master/fw_version.txt";
